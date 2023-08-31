@@ -1,0 +1,41 @@
+{
+  "editor.tabSize": 2,
+  "editor.linkedEditing": true,
+  "editor.renderWhitespace": "all",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.comments.insertSpace": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "explorer.confirmDragAndDrop": true,
+
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  "git.autofetch": true,
+
+  "prettier.jsxSingleQuote": false,
+  "prettier.requirePragma": false,
+  "prettier.requireConfig": false,
+  "prettier.prettierPath": "./node_modules/prettier",
+
+  "cSpell.words": [
+    "Adelle",
+    "btns",
+    "categoryid",
+    "Parens",
+    "saee",
+    "Selsal",
+    "showbyname",
+    "swiper"
+  ],
+  "cSpell.language": "en,ar"
+}

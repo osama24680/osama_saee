@@ -1,0 +1,112 @@
+:root {
+  /* Media query break points */
+  --XS: 430px;
+  --S: 576px;
+  --M: 768px;
+  --L: 992px;
+  --XL: 1200px;
+  --XXL: 1400px;
+  --XXXL: 1920px;
+
+  /* Dimensions */
+  --padding: 8px;
+  --gap: 16px;
+  --border-radius: 12px;
+
+  --SideNav-width: 270px;
+
+  --Nav-height: 90px;
+  --Nav-padding-block: 25px;
+
+  --Container-padding: 2vw;
+
+  --Card-preferred-width: 300px;
+  --Card-max-width: 300px;
+  --Card-min-width: 50px;
+
+  --Button-max-width: 200px;
+  --Button-min-width: 100px;
+
+  /* Fonts */
+  --fontSize: 18px;
+
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  /* Animation */
+  --transition: 0.4s;
+
+  /* Colors */
+  --white: rgb(255, 255, 255);
+
+  --gray: rgb(226, 233, 237);
+  --gray1: rgb(76, 103, 123);
+  --gray2: rgb(113, 121, 143);
+  --gray3: rgb(248, 248, 248);
+
+  --black: rgb(0, 0, 0);
+  --black1: rgb(32, 41, 69);
+
+  --green: rgb(19, 113, 77);
+  --green1: rgb(136, 203, 96);
+  --green2: rgb(231, 245, 223);
+
+  --violet: rgb(230, 228, 255);
+
+  --yellow: rgb(255, 244, 217);
+
+  --orange: rgb(255, 137, 0);
+
+  --blue: rgb(0, 149, 255);
+
+  --body-fg-rgba: var(--black);
+  --body-bg-rgba: var(--gray3);
+
+  --components-bg-rgba: var(--white);
+
+  --inputs-bg-rgba: var(--gray);
+  --inputs-border-rgba: var(--gray2);
+  --inputs-border-focus-rgba: var(--gray1);
+  --inputs-label-rgba: var(--gray1);
+
+  --name-rgba: var(--black1);
+
+  --action-bg-rgba: var(--green);
+  --action-border-rgba: var(--green1);
+  --action-selected-rgba: var(--green2);
+
+  --inner-status-rgba: var(--blue);
+  --outer-status-rgba: var(--orange);
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+html {
+  /*color-scheme: dark light;*/
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}

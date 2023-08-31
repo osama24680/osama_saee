@@ -1,0 +1,194 @@
+.contactContainer {
+  .contact-title {
+    text-align: start;
+    span {
+      color: #343a49;
+    }
+    color: $mainColor;
+
+    h3 {
+      display: inline-block;
+      text-transform: uppercase;
+    }
+  }
+}
+.contactUs {
+  text-align: start;
+
+  &__item {
+    h4 {
+      color: $mainColor;
+      margin-bottom: 2rem;
+      font-weight: bold;
+
+      img {
+        margin-left: 1rem;
+        width: 30px;
+      }
+    }
+
+    p {
+      color: #4d4d4d;
+      display: flex;
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      a {
+        color: #4d4d4d;
+      }
+
+      img {
+        margin-inline-start: 1rem;
+        align-self: flex-end;
+        width: 24px;
+      }
+    }
+
+    &.twitter {
+      p {
+        display: flex;
+
+        span:first-child {
+          width: 12rem;
+
+          @media (max-width: 768px) {
+            width: auto;
+          }
+        }
+
+        a {
+          color: $mainColor;
+
+          margin-inline-end: 3rem;
+        }
+      }
+    }
+  }
+}
+.formStyle {
+  text-align: start;
+  input,
+  textarea {
+    border: 1px solid $mainColor;
+    padding: 1.2rem 0.8rem;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    &::placeholder {
+      color: $mainColor;
+    }
+  }
+
+  select {
+    border: 1px solid $mainColor;
+    border-radius: 0;
+    height: 53px !important;
+    &::placeholder {
+      color: $mainColor;
+    }
+  }
+
+  .mainBtn {
+    text-align: center;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .grid.individual {
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 14rem));
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    }
+  }
+
+  .radio-group {
+    width: 100%;
+    input[type="radio"] {
+      visibility: hidden;
+      position: absolute;
+
+      &:checked + div {
+        background-color: $mainColor;
+
+        span {
+          color: #fff;
+        }
+      }
+    }
+
+    .radio-btn {
+      padding: 1rem 0.8rem;
+      border: 1px solid #9eadbd;
+      text-align: center;
+      cursor: pointer;
+      transition: all $transTime ease-in-out;
+      color: $mainColor;
+    }
+  }
+}
+
+.bookAppointment {
+  &__text {
+    color: #25262a;
+    margin-bottom: 0.4rem;
+
+    span,
+    p {
+      color: #fff;
+    }
+  }
+  &__form {
+    background-color: $mainColor;
+    padding: 2rem 2rem 4rem 2rem;
+    position: relative;
+
+    input,
+    textarea {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #fff;
+      border-radius: 0px !important;
+      color: #fff;
+      resize: none;
+
+      &::placeholder {
+        color: #fff;
+        font-weight: 200;
+      }
+
+      &:active,
+      &:focus {
+        background: transparent !important;
+      }
+    }
+
+    .book_btn {
+      position: absolute;
+      inset-inline-end: -1rem;
+
+      bottom: -4rem;
+
+      button {
+        background-color: #25262a;
+        padding: 0.8rem 1rem;
+        min-width: 160px;
+        background: #25262a 0% 0% no-repeat padding-box;
+        border: none;
+        border-radius: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}

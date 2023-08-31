@@ -1,0 +1,146 @@
+.about-us {
+  text-align: start;
+}
+
+.about-us-desc {
+  margin-bottom: 2rem;
+  .sectionTitle {
+    p {
+      max-width: 60vw;
+
+      @media (max-width: 768px) {
+        max-width: 100%;
+      }
+    }
+  }
+  h3 {
+    color: $mainColor;
+  }
+  p {
+    color: $blackbg;
+    line-height: 1.8;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.about-team-work {
+  text-align: start;
+
+  &__join {
+    .join-right {
+      flex-basis: 70%;
+      @media (max-width: 600px) {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  &__manage {
+    .manage-ul {
+      list-style: none;
+
+      li {
+        margin-top: 10px;
+
+        a {
+          display: flex;
+          align-items: center;
+        }
+        p {
+          margin: 0 10px 0 0;
+          color: $blue-400;
+        }
+      }
+    }
+
+    &--qualifications {
+      padding: 0 4rem;
+      @media (max-width: 768px) {
+        padding: 0 1rem;
+      }
+
+      h5 {
+        color: $gold-300;
+        margin-bottom: 2rem;
+      }
+
+      .qualifications-item {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+
+        img {
+          width: 100px;
+        }
+
+        &__info {
+          margin-right: 2rem;
+
+          h6 {
+            color: #232629;
+            margin-bottom: 0.6rem;
+            font-size: 18px;
+          }
+          p {
+            margin: 0;
+            color: #232629;
+
+            &:not(:last-child) {
+              margin-bottom: 0.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.arrow-ul {
+  list-style: none;
+
+  li {
+    position: relative;
+
+    padding-right: 1rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    &::after {
+      right: 0;
+      top: 6px;
+      content: "";
+      position: absolute;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      border-right: 6px solid #47414f;
+    }
+  }
+}
+
+.home__about__icons {
+  border-radius: 50%;
+  border: 1px solid #a3947f;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  img {
+    width: 50%;
+  }
+}

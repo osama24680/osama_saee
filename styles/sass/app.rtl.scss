@@ -1,0 +1,48 @@
+@import "_font";
+@import "_variables";
+@import "_navbar";
+@import "_media";
+@import "_home";
+@import "_not-found";
+@import "_about";
+@import "_contactUs";
+@import "_skeleton";
+@import "_pagination";
+@import "_spinner";
+@import "_main";
+@import "_footer";
+
+* {
+  font-family: "AdelleSansARA", Courier, monospace;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.card-title {
+  font-family: "AdelleSansARA", Courier, monospace !important;
+  line-height: 1.7 !important;
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #1861a9;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: white;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}

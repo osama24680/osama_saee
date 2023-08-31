@@ -1,0 +1,87 @@
+.label {
+  width: 100%;
+  color: #67757c;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.container_box {
+  position: relative;
+}
+
+.file_input {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  padding: calc(1.1 * var(--padding)) calc(0.8 * var(--padding));
+}
+
+.file_label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  color: #00b7ce;
+  background-color: #fff;
+  border: 1px solid #00b7ce;
+  padding: calc(1.2 * var(--padding)) calc(0.8 * var(--padding))
+    calc(1.2 * var(--padding)) 0;
+}
+
+.file_label::after {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  display: block;
+  padding: calc(1.2 * var(--padding)) calc(2 * var(--padding))
+    calc(1.2 * var(--padding)) calc(2 * var(--padding));
+  color: #00b7ce;
+  content: "عرض";
+  background-color: #e9ecef;
+  border-right: 1px solid #00b7ce;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.file_label_error {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  color: rgb(225, 65, 65);
+  background-color: #fff;
+  border: 1px solid red;
+  padding: calc(1.2 * var(--padding)) calc(0.8 * var(--padding))
+    calc(1.2 * var(--padding)) 0;
+}
+
+.file_label_error::after {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  display: block;
+  padding: calc(1.2 * var(--padding)) calc(2 * var(--padding))
+    calc(1.2 * var(--padding)) calc(2 * var(--padding));
+  color: rgb(225, 65, 65);
+  content: "عرض";
+  background-color: rgb(249, 230, 230);
+  border-right: 1px solid red;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.error {
+  margin: 5px 0 0 0;
+  font-size: 13px;
+  font-weight: 200x;
+  color: rgb(225, 65, 65);
+}

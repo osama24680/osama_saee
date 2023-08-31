@@ -1,0 +1,9 @@
+.CentersTemplate {
+  display: flex;
+  gap: calc(3 * var(--gap));
+}
+
+.content {
+  width: 100vw;
+  max-width: 70%;
+}

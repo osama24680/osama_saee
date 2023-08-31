@@ -1,0 +1,21 @@
+.GridCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: clamp(100px, 100%, 198px);
+}
+
+.img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.title {
+  color: #00b7ce;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+  margin: 30px 0 15px 0;
+}

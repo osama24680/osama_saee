@@ -1,0 +1,14 @@
+.CategoryButton {
+  background-color: #00b7ce;
+  color: #ffffff;
+
+  padding: 8px 32px;
+  border-radius: 4px;
+
+  transition: all 0.2s 0.2s ease-in-out;
+}
+
+.CategoryButton:hover,
+.active {
+  background-color: #21409a;
+}

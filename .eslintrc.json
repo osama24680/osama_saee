@@ -1,0 +1,25 @@
+{
+  "extends": ["next/core-web-vitals"],
+
+  "rules": {
+    "no-console": "error",
+
+    "import/no-unused-modules": [1, { "unusedExports": true }],
+
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  },
+
+  "overrides": [
+    {
+      "files": ["./pages/_document.js", "./pages/index.js", "./pages/_app.js"],
+      "rules": {
+        "import/no-unused-modules": [0, { "unusedExports": false }]
+      }
+    }
+  ]
+}

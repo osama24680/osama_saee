@@ -1,0 +1,115 @@
+{
+  "researchPriority": [
+    {
+      "id": 1,
+      "title": "نبذة",
+      "link": "/centers/researchCenter/researchPriority/desc",
+      "name": "desc"
+    },
+    {
+      "id": 2,
+      "title": "احجز عنوانك",
+      "link": "/centers/researchCenter/researchPreparation/desc",
+      "name": "reserveTitle"
+    },
+    {
+      "id": 3,
+      "title": "اقترح بحثاً",
+      "link": "/centers/researchCenter/researchPriority/suggestResearch",
+      "name": "suggestResearch"
+    },
+    {
+      "id": 4,
+      "title": "الموضوعات البحثية السابقة",
+      "link": "/centers/researchCenter/researchPriority/researchTopics",
+      "name": "researchTopics"
+    }
+  ],
+
+  "researchPreparation": [
+    {
+      "id": 1,
+      "title": "نبذة",
+      "link": "/centers/researchCenter/researchPreparation/desc",
+      "name": "desc"
+    },
+    {
+      "id": 2,
+      "title": "ضوابط المشاركة",
+      "link": "/centers/researchCenter/researchPreparation/rules",
+      "name": "rules"
+    },
+    {
+      "id": 3,
+      "title": "استعراض الدراسات",
+      "link": "/centers/researchCenter/researchPreparation/studiesDisplay",
+      "name": "studiesDisplay"
+    },
+    {
+      "id": 4,
+      "title": "احجز عنوانك",
+      "link": "/centers/researchCenter/researchPreparation/reserveTitle",
+      "name": "reserveTitle"
+    }
+  ],
+
+  "sciencePublishing": [
+    {
+      "id": 1,
+      "title": "نبذة",
+      "link": "/centers/researchCenter/sciencePublishing/desc",
+      "name": "desc"
+    },
+    {
+      "id": 2,
+      "title": "ضوابط المشاركة",
+      "link": "/centers/researchCenter/sciencePublishing/rules",
+      "name": "rules"
+    },
+    {
+      "id": 3,
+      "title": "استعراض الإصدارات",
+      "link": "/centers/researchCenter/sciencePublishing/versionsDisplay",
+      "name": "versionsDisplay"
+    },
+    {
+      "id": 4,
+      "title": "دعوة للمشاركة",
+      "link": "/centers/researchCenter/sciencePublishing/participationInvitation",
+      "name": "participationInvitation"
+    }
+  ],
+
+  "encyclopedias": [
+    {
+      "id": 1,
+      "title": "نبذة",
+      "link": "/centers/researchCenter/encyclopedias/desc",
+      "name": "desc"
+    },
+    {
+      "id": 2,
+      "title": "ضوابط المشاركة",
+      "link": "/centers/researchCenter/encyclopedias/rules",
+      "name": "rules"
+    },
+    {
+      "id": 3,
+      "title": "استعراض الموسوعات",
+      "link": "/centers/researchCenter/encyclopedias/encyclopediasDisplay",
+      "name": "encyclopediasDisplay"
+    },
+    {
+      "id": 4,
+      "title": "الباحثون / المشاركون",
+      "link": "/centers/researchCenter/encyclopedias/researchers",
+      "name": "researchers"
+    },
+    {
+      "id": 5,
+      "title": "اقترح موسوعة",
+      "link": "/centers/researchCenter/encyclopedias/suggestEncyclopedia",
+      "name": "suggestEncyclopedia"
+    }
+  ]
+}

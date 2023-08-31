@@ -1,0 +1,13 @@
+.SideTabs {
+  width: 30%;
+  max-width: 300px;
+  min-width: 150px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: normal;
+  color: #21409a;
+  border-bottom: 3px solid #00b7ce;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,14 @@
+{
+  "require": "هذا الحقل مطلوب",
+
+  "sending": "يتم الارسال ...",
+
+  "success": " تم ارسال رسالتك بنجاح ، جاري مراجعتها الآن",
+
+  "api_errors": {
+    "other_error": " حدث خطأ! برجاء المحاولة مرة أخرى",
+    "The special.cv must be a file of type: pdf.": "السيرة الذاتية يجب ان تكون بصيغة pdf",
+    "The special.plan must be a file of type: pdf.": "الخطة يجب ان تكون بصيغة pdf",
+    "The special.index must be a file of type: pdf.": "الفهرس يجب ان يكون بصيغة pdf"
+  }
+}

@@ -1,0 +1,24 @@
+.CurvyLink {
+  background-color: #00b7ce;
+  color: #ffffff;
+
+  display: block;
+  width: fit-content;
+
+  padding: var(--padding) calc(3 * var(--padding));
+  border-radius: calc(3 * var(--padding));
+
+  text-align: center;
+
+  transition: all 0.2s 0.2s ease-in-out;
+}
+
+.CurvyLink:hover {
+  background-color: #21409a;
+}
+
+.disabled {
+  background-color: #42464778;
+
+  pointer-events: none;
+}

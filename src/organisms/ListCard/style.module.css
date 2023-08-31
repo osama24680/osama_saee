@@ -1,0 +1,58 @@
+.ListCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px hsla(300, 0%, 53%, 0.102);
+  display: flex;
+  gap: 16px;
+  padding: var(--padding);
+}
+
+.img_side {
+  width: 20%;
+  max-height: 320px;
+  flex-grow: 1;
+  border-radius: 10px;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.content_side {
+  width: 50%;
+
+  display: grid;
+  gap: 16px;
+  align-items: center;
+  align-content: space-between;
+
+  flex-grow: 1;
+  padding-top: var(--padding);
+}
+
+.link {
+  margin-inline-start: auto;
+}
+
+@media (max-width: 768px) {
+  .ListCard {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .img_side {
+    width: 100%;
+  }
+
+  .content_side {
+    width: 100%;
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "title": " مركز البحوث والدراسات الوقفية",
+  "tabs": [
+    {
+      "id": 1,
+      "title": "عن المركز",
+      "type": "link",
+      "link": "/centers/researchCenter/about",
+      "name": "about"
+    },
+    {
+      "id": 2,
+      "title": "المركز في أرقام",
+      "type": "link",
+      "link": "/centers/researchCenter/numbers",
+      "name": "numbers"
+    },
+    {
+      "id": 3,
+      "title": "مشاريع مركز البحوث والدراسات الوقفية",
+      "type": "dropdown",
+      "tabs": [
+        {
+          "id": 3.1,
+          "title": "الأوليات البحثية",
+          "type": "link",
+          "link": "/centers/researchCenter/researchPriority/desc",
+          "name": "researchPriority"
+        },
+        {
+          "id": 3.2,
+          "title": "إعداد البحوث العلمية",
+          "type": "link",
+          "link": "/centers/researchCenter/researchPreparation/desc",
+          "name": "researchPreparation"
+        },
+        {
+          "id": 3.3,
+          "title": " النشر العلمي ",
+          "type": "link",
+          "link": "/centers/researchCenter/sciencePublishing/desc",
+          "name": "sciencePublishing"
+        },
+        {
+          "id": 3.4,
+          "title": "إعداد الموسوعات العلمية",
+          "type": "link",
+          "link": "/centers/researchCenter/encyclopedias/desc",
+          "name": "encyclopedias"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "تواصل مع المركز",
+      "type": "link",
+      "link": "/centers/researchCenter/contactUs",
+      "name": "contactUs"
+    }
+  ]
+}

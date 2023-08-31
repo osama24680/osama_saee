@@ -1,0 +1,457 @@
+.see_more {
+  img {
+    transition: all $transTime ease-in-out;
+  }
+  span {
+    margin-left: 5px;
+  }
+  color: $mainColor;
+
+  &:hover {
+    text-decoration: none !important;
+    color: $mainColor;
+
+    img {
+      transform: translateX(-5px);
+    }
+  }
+}
+
+.title_section {
+  h1 {
+    color: $blue-400;
+    font-weight: bold;
+    margin: 0;
+  }
+  span {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: $mainColor;
+    font-size: 18px;
+  }
+}
+.home {
+  &__about {
+    background-image: url("../../public/assets/images/about-saee.png"),
+      linear-gradient(240deg, #00b7ce 0%, #1861a9 100%);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+    font-weight: 200;
+    @media (max-width: 768px) {
+      background-image: linear-gradient(240deg, #00b7ce 0%, #1861a9 100%);
+    }
+    &--text {
+      margin-bottom: 1.5rem;
+      .aboutLogo {
+        height: 100px;
+      }
+      p {
+        margin-top: 1.4rem;
+        margin-bottom: 0;
+        font-weight: 200;
+        line-height: 1.9;
+      }
+
+      .aboutPlayImages {
+        display: inline-block;
+        position: relative;
+        img:last-child {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    &--numbers {
+      background-image: url("../../public/assets/images/svg/number_bg.svg");
+      background-repeat: no-repeat;
+      background-size: 77vw;
+      padding: 2rem 0;
+      margin-bottom: 1.5rem;
+
+      @media (max-width: 768px) {
+        background-position: right;
+        background-size: cover;
+      }
+
+      .bigNum {
+        span {
+          font-size: 60px !important;
+          @media (max-width: 991px) {
+            font-size: 35px !important;
+          }
+        }
+      }
+    }
+
+    &--grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      margin-bottom: 1.5rem;
+
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+      }
+      .grid-item {
+        .gridTop {
+          display: flex;
+          align-items: center;
+          h5 {
+            margin: 0;
+            margin-inline-start: 0.5rem;
+          }
+        }
+        p {
+          font-weight: 200;
+        }
+      }
+    }
+  }
+
+  &__media {
+    text-align: right;
+    padding-bottom: 3rem !important;
+    background-color: #fff;
+
+    &--news {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      grid-gap: 0rem;
+
+      @media (max-width: 600px) {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      }
+      a {
+        display: inline-block;
+
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+
+          .news-item__content {
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+      .news-item {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+
+        &__content {
+          width: 100%;
+          flex-basis: 70%;
+        }
+        padding: 0.5rem;
+
+        &__img {
+          flex-basis: 30%;
+
+          margin-left: 17px;
+          img {
+            width: 100%;
+            max-height: 120px;
+            object-fit: cover;
+            object-position: top;
+          }
+        }
+
+        &__date {
+          img {
+            margin-left: 0.3rem;
+            width: 12px;
+          }
+          span {
+            color: $mainColor;
+            font-size: 12px;
+            display: inline-block;
+          }
+        }
+
+        h2 {
+          margin: 0.5rem 0;
+          font-weight: 300;
+          font-size: 20px;
+          color: $secondColor;
+        }
+
+        p {
+          margin: 0;
+          color: #777777;
+          font-size: 13px;
+          font-weight: 200;
+        }
+      }
+    }
+
+    &--blog {
+      height: 100%;
+      @media (max-width: 768px) {
+        margin-top: 1rem;
+      }
+      .card {
+        padding: 0.5rem;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+
+        .card-body {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .card-title {
+          margin: 1rem 0 !important;
+          font-size: 25px !important;
+          color: #000 !important;
+        }
+
+        .card-text {
+          margin: 0;
+          color: #a8a8a8;
+          font-size: 13px;
+        }
+      }
+      .blog-item {
+        &__date {
+          img {
+            margin-left: 0.3rem;
+            width: 12px;
+          }
+          span {
+            color: #afafaf;
+            font-size: 12px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  &__sheikhBooks {
+    text-align: start;
+
+    &--btns {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin: 1rem 0;
+      .active {
+        background-color: $secondColor !important;
+        color: #fff !important;
+      }
+      button {
+        border: none;
+        padding: 0.5rem 2rem;
+        margin-block-end: 1rem;
+        background-color: $mainColor;
+        border-radius: 4px;
+
+        &:not(:last-child) {
+          margin-inline-end: 1rem;
+        }
+      }
+    }
+  }
+
+  &__centers {
+    background-image: url("../../public/assets/images/watheqh.png"),
+      linear-gradient(212deg, #00b7ce 0%, #21409a 100%);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 30vw, 100vw;
+    color: #fff;
+    padding: 3rem 0;
+    p {
+      font-weight: 200;
+    }
+    &--center {
+      &:not(:last-of-type) {
+        margin-bottom: 4rem;
+      }
+    }
+    .numbersGrid {
+      grid-template-columns: repeat(3, 1fr) !important;
+
+      .gridItem {
+        span {
+          width: auto;
+
+          b {
+            right: 0;
+            bottom: -20px;
+            font-weight: 100;
+            max-width: 80%;
+          }
+        }
+      }
+    }
+
+    .footer__links {
+      li {
+        font-size: 18px;
+        a {
+          text-decoration: underline !important;
+          font-weight: 200;
+        }
+        &:not(:last-of-type) {
+          margin-bottom: 1.5rem !important;
+        }
+      }
+    }
+  }
+  &__store {
+    padding: 3rem 0;
+
+    .mainBtn {
+      background: transparent linear-gradient(255deg, #00b7ce 0%, #21409a 100%)
+        0% 0% no-repeat padding-box !important;
+      border-radius: 33px;
+      padding: 0.6rem 2rem;
+    }
+
+    h4 {
+      color: $mainColor;
+    }
+    p {
+      color: #777777;
+      font-weight: 200;
+      margin: 2rem 0;
+    }
+  }
+  &__partners {
+    background-color: #f3f3f3;
+    padding: 3rem 0;
+  }
+}
+
+.numbersGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  height: 100%;
+  align-items: center;
+
+  .gridItem {
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    span {
+      font-weight: 600;
+      font-size: 50px;
+      position: relative;
+      width: max-content;
+
+      @media (max-width: 991px) {
+        font-size: 35px !important;
+      }
+      b {
+        font-weight: 200;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 12px;
+      }
+    }
+    p {
+      margin-bottom: 0;
+      max-width: 70%;
+    }
+  }
+}
+
+.modal-book {
+  .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h4 {
+      font-size: 25px;
+      color: #3b3128;
+    }
+    p {
+      color: #9d9d9d;
+      margin: 0;
+    }
+  }
+  .col-md-4 {
+    img {
+      box-shadow: 0px 3px 20px #8e8e93;
+      border-radius: 5px;
+    }
+  }
+  .modal-header {
+    border-bottom: none;
+
+    .btn-close {
+      margin-inline-start: auto !important;
+      margin-inline-end: 0 !important;
+    }
+  }
+
+  .modal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item {
+      span {
+        color: #969393;
+        font-weight: 300;
+      }
+      b {
+        color: $mainColor;
+      }
+    }
+  }
+
+  .modal-btns {
+    display: flex;
+    align-items: center;
+    margin: 0.6rem 0 !important;
+
+    @media (max-width: 768px) {
+      margin-top: 1rem;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+    a {
+      background-color: $mainColor;
+      color: #fff;
+      display: inline-block;
+      font-size: 20px;
+      padding: 0.5rem 1rem;
+      min-width: 40%;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+      &:not(:last-of-type) {
+        margin-inline-end: 1rem;
+      }
+    }
+  }
+
+  .bookPrice {
+    text-align: center;
+    color: #3b3128;
+    margin: 0.6rem 0 !important;
+    font-weight: 600;
+  }
+}
+
+.aboutPlayImages {
+  border: none;
+  background: transparent;
+}

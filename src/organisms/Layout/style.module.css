@@ -1,0 +1,5 @@
+.wrapper {
+  background-color: #f8f5ef;
+
+  padding-block: calc(4 * var(--padding));
+}

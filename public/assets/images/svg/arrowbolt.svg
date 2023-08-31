@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.667" height="16.15" viewBox="0 0 8.667 16.15">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g transform="translate(7.607 1.06) rotate(90)">
+    <line class="a" x1="6.96" y2="6.547" transform="translate(7.07 0)" />
+    <line class="a" x2="6.96" y2="6.547" transform="translate(0 0)" />
+  </g>
+</svg>
