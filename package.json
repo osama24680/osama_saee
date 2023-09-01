@@ -41,5 +41,10 @@
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
+  },
+  "config": {
+    "compatibility_flags": [
+      "nodejs_compat"
+    ]
   }
 }
